@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+
+body{
+  font-family:  'Heebo', sans-serif !important;
+}
+
+#conty{
+  border: 1px solid black;
+  width: 500px;
+  margin-top: 2%;
+}
+
+.container1{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 110px; 
+  margin-top:100px
+}
+
+.todo-list{
+  border: 1px solid black;
+  text-align: justify;
+  margin-left: 45px;
+  margin-right: 46px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  
+}
+
+.btn4{
+  margin-left: 80px;
+}
+h1{
+  border-bottom: 1px dashed grey;
+}
+#btn-1{
+  margin-left: 15px;
+}
+.form-list{
+  margin: 30px 10px;
+}
+.to1{
+  position: relative;
+  margin-left: 31%;
+  margin-right: 31%;
+  margin-top: 2%;
+  
+}
+.to2{
+  position: relative;
+  margin-top: -6%;
+  margin-left: 1%;
+  font-size: 50px;
+  padding-left: -50px;
+  margin-right: 81%;
+}
+#card{
+  width: 70rem; 
+  margin-left: -105px; 
+  margin-top: 20px; 
+  flex-direction: row !important; 
+  flex-wrap: wrap; 
+  flex-basis:90%
+}
+
+@media only screen and (max-width: 400px) {
+  #conty { 
+    border: 1px solid black; 
+    width: 360px; 
+    margin-top: 3%; 
+    margin-left: 15px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .to1 { 
+    position: relative;
+    margin-left: 15px;
+    margin-top: 25px; 
+  }
+}
+@media only screen and (max-width: 400px) {
+  .to2 { 
+    position: relative;
+    margin-top: -80px;
+    margin-bottom: 80px;
+    margin-left: -62%;
+    font-size: 38px;
+    margin-right: 128px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #card { 
+    width: 104rem; 
+    margin-left: -118px; 
+    margin-top: -65px; 
+    flex-direction: row !important; 
+    flex-wrap: wrap; 
+    flex-basis: 125%;
+  }
+}
+
+.foot{
+  display: flex;
+  float: right;
+  margin-right: 104px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.icon-1{
+  margin: 0px 10px;
+}
+

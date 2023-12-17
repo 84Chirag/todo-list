@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/128/2387/2387635.png">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>TODO List App</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="https://todo-list.chiraggour.repl.co"> <img class="icon-2"
+        src="https://cdn.iconscout.com/icon/premium/png-512-thumb/todo-list-1890169-1600543.png?f=avif&w=256"
+        width="40px" height="40px">My Todo App</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="https://todo-list.chiraggour.repl.co">Home <span
+              class="sr-only">(current)</span></a>
+        </li>
+        <!--<li class="nav-item">
+          <a class="nav-link" href="#">Portfolio</a>
+        </li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+      <!--<form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form> -->
+    </div>
+  </nav>
+
+  <div class="container-3">
+    <h2 class="to1">Task</h2>
+    <div class="container" id="conty">
+      <form class="form-list">
+        <div class="form-group ">
+          <label for="title">Title</label>
+          <input type="text" class="form-control" id="title" aria-describedby="text">
+        </div>
+        <div class="form-group ">
+          <label for="description">Description</label>
+          <input type="text" class="form-control" id="description">
+        </div>
+        <!-- <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div> -->
+        <button id="btn-1" type="submit" class="btn btn-primary ">Submit</button>
+        <button id="btn-2" class="btn btn-danger "> Delete </button>
+      </form>
+    </div>
+  </div>
+
+  <div id="todo" class="container1">
+    <div class="to2">
+      <b>Task List</b>
+    </div>
+    <div id="card" class="card rows">
+    </div>
+  </div>
+  <footer>
+    <div class="foot">
+      <a href="https://twitter.com/chiragvgour" target="blank"><img class="icon-1"
+          src="https://cdn-icons-png.flaticon.com/128/25/25347.png" width="25px" height="25px"></a>
+      <a href="https://github.com/84Chirag" target="blank"><img class="icon-1"
+          src="https://cdn-icons-png.flaticon.com/128/25/25231.png" width="25px" height="25px"></a>
+      <a href="https://instagram.com/mr.smarty_chirag" target="blank"><img class="icon-1"
+          src="https://cdn-icons-png.flaticon.com/128/1400/1400829.png" width="25px" height="25px"></a>
+      <a href="https://www.facebook.com/chirag.gour.963" target="blank"><img class="icon-1"
+          src="https://cdn-icons-png.flaticon.com/128/1051/1051309.png" width="25px" height="25px"></a>
+    </div>
+  </footer>
+  <!-- Optional JavaScript; choose one of the two! -->
+  <script src="script.js"></script>
+
+  <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
