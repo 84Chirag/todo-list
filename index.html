@@ -16,7 +16,7 @@
 
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="https://todo-list.chiraggour.repl.co"> <img class="icon-2"
+    <a class="navbar-brand" href="https://84chirag.github.io/todo-list/"> <img class="icon-2"
         src="https://cdn.iconscout.com/icon/premium/png-512-thumb/todo-list-1890169-1600543.png?f=avif&w=256"
         width="40px" height="40px">My Todo App</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -27,18 +27,18 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="https://todo-list.chiraggour.repl.co">Home <span
+          <a class="nav-link" href="https://84chirag.github.io/todo-list/">Home <span
               class="sr-only">(current)</span></a>
         </li>
         <!--<li class="nav-item">
           <a class="nav-link" href="#">Portfolio</a>
         </li> -->
         <li class="nav-item dropdown">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="about.html">About</a>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
           <a class="nav-link" href="#">Contact</a>
-        </li>
+        </li> -->
       </ul>
       <!--<form class="form-inline my-2 my-lg-0">
         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
@@ -47,25 +47,35 @@
     </div>
   </nav>
 
+
+  <div class="alert alert-danger alert-dismissible fade show enteralert " role="alert" style="display: none; text-align: center;">
+    <strong>please Enter a Todo!</strong>
+  </div>
+  <div class="alert alert-danger alert-dismissible fade show alldeleted " role="alert" style="display: none; text-align: center;">
+    <strong>All Todo has been Deleted!</strong>
+  </div>
+  <div class="alert alert-danger alert-dismissible fade show deletedalert " role="alert" style="display: none; text-align: center;">
+    <strong>Your Todo has been Deleted!</strong>
+  </div>
+  <div class="alert alert-success alert-dismissible fade show updatedalert " role="alert" style="display: none; text-align: center;">
+    <strong>Your Todo has been Updated!</strong>
+  </div>
+
   <div class="container-3">
-    <h2 class="to1">Task</h2>
+    <h2 class="to1">What Do You Want To Do Today?</h2>
     <div class="container" id="conty">
       <form class="form-list">
         <div class="form-group ">
-          <label for="title">Title</label>
-          <input type="text" class="form-control" id="title" aria-describedby="text">
+          <label for="title">Todo</label>
+          <input type="text" class="form-control" id="title" aria-describedby="text" required>
         </div>
         <div class="form-group ">
           <label for="description">Description</label>
-          <input type="text" class="form-control" id="description">
+          <input type="text" class="form-control" id="description" required>
         </div>
-        <!-- <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-      </div> -->
-        <button id="btn-1" type="submit" class="btn btn-primary ">Submit</button>
-        <button id="btn-2" class="btn btn-danger "> Delete All </button>
+        <button id="btn-1" type="submit" class="btn btn-primary " aria-required="true">Submit</button>
         <button id="btn-4" type="submit" class="btn btn-success d-none">Update</button>
+        <button id="btn-2" class="btn btn-danger "> Delete All </button>
       </form>
     </div>
   </div>

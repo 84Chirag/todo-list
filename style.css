@@ -10,6 +10,10 @@ body{
   margin-top: 2%;
 }
 
+.navbar-collapse{
+  text-align: center;
+}
+
 .container1{
   display: flex;
   flex-direction: row;
@@ -31,7 +35,7 @@ body{
 }
 
 .btn4{
-  margin-left: 80px;
+  /* margin-left: 80px; */
 }
 h1{
   border-bottom: 1px dashed grey;
@@ -47,6 +51,7 @@ h1{
   margin-left: 31%;
   margin-right: 31%;
   margin-top: 2%;
+  padding-left: 50px;
   
 }
 .to2{
@@ -66,22 +71,22 @@ h1{
   flex-basis:90%
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 390px) and (max-width: 400px) {
   #conty { 
     border: 1px solid black; 
-    width: 360px; 
+    width: 350px; 
     margin-top: 3%; 
     margin-left: 15px;
   }
-}
-@media only screen and (max-width: 400px) {
+
   .to1 { 
     position: relative;
     margin-left: 15px;
-    margin-top: 25px; 
+    margin-top: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 0px;
   }
-}
-@media only screen and (max-width: 400px) {
   .to2 { 
     position: relative;
     margin-top: -80px;
@@ -90,8 +95,40 @@ h1{
     font-size: 38px;
     margin-right: 128px;
   }
+  #card { 
+    width: 104rem; 
+    margin-left: -118px; 
+    margin-top: -65px; 
+    flex-direction: row !important; 
+    flex-wrap: wrap; 
+    flex-basis: 125%;
+  }
 }
-@media only screen and (max-width: 400px) {
+
+@media only screen and (min-width: 400px) and (max-width: 465px) {
+  #conty { 
+    border: 1px solid black; 
+    width: 350px; 
+    margin-top: 3%; 
+    margin-left: 15px;
+  }
+
+  .to1 { 
+    position: relative;
+    margin-left: 15px;
+    margin-top: 25px; 
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 0px;
+  }
+  .to2 { 
+    position: relative;
+    margin-top: -80px;
+    margin-bottom: 80px;
+    margin-left: -62%;
+    font-size: 38px;
+    margin-right: 128px;
+  }
   #card { 
     width: 104rem; 
     margin-left: -118px; 
@@ -113,4 +150,5 @@ h1{
 .icon-1{
   margin: 0px 10px;
 }
+
 
