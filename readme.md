@@ -1,38 +1,4 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <title>Todo Web App README</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-    h1 {
-      color: #333;
-    }
-    h2 {
-      color: #666;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 20px 0;
-    }
-    ul {
-      list-style-type: disc;
-      margin-left: 20px;
-    }
-    code {
-      background-color: #f0f0f0;
-      padding: 2px 4px;
-      border-radius: 4px;
-    }
-  </style>
-</head>
+
 <body>
   <h1>Todo Web App</h1>
 
@@ -82,4 +48,4 @@
   <p><a href="https://github.com/84Chirag">Chirag Gour</a></p>
 
 </body>
-</html>
+
