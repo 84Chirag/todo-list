@@ -81,7 +81,9 @@ displaytodo();
 
 let btn = document.getElementById('btn-1');
 let btn2 = document.getElementById('btn-2');
+let btn4 = document.getElementById('btn-4');
 let todo = JSON.parse(localStorage.getItem("todo")) || [];
+let editIndex = null;
 
 btn.addEventListener("click", (e) => {
   e.preventDefault();
@@ -109,12 +111,30 @@ btn2.addEventListener("click", (e) => {
   description.value = "";
 });
 
+btn4.addEventListener("click", (e) => {
+  e.preventDefault();
+
+  let titlec = title.value;
+  let descriptionc = description.value;
+
+  todo[editIndex] = [titlec, descriptionc];
+  localStorage.setItem("todo", JSON.stringify(todo));
+
+  displaytodo();
+
+  title.value = "";
+  description.value = "";
+
+  btn4.classList.add('d-none');
+  btn.classList.remove('d-none');
+});
+
 function displaytodo() {
 
   let todoContainer = document.getElementById('card');
   todoContainer.innerHTML = ""; // Clear the existing todos
 
-  for (let i=0; i<todo.length; i++) {
+  for (let i = 0; i < todo.length; i++) {
     let title = todo[i][0];
     let description = todo[i][1];
 
@@ -126,6 +146,7 @@ function displaytodo() {
       <h1>${title}</h1>
       <p>${description}</p>
       <button id="btn-3-${i}" class="btn btn-danger mb-2 btn4"> Delete </button>
+      <button id="btn-5-${i}" class="btn btn-info mb-2 btn4"> Edit </button>
     `;
     todoContainer.appendChild(todoItem);
 
@@ -138,9 +159,20 @@ function displaytodo() {
 
       displaytodo();
     });
+
+    let btn5 = document.getElementById(`btn-5-${i}`);
+    btn5.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      title.value = title;
+      description.value = description;
+
+      btn4.classList.remove('d-none');
+      btn.classList.add('d-none');
+
+      editIndex = i;
+    });
   }
 }
-
-
 
 displaytodo();
